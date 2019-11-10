@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestAll">
+	<parameter name="UI_SERVER" value="https://open.spotify.com/browse/featured"></parameter>
+	<parameter name="LOG_LEVEL" value="DEBUG"></parameter>
+	<parameter name="RUN_MODE" value="develop" />
+	<parameter name="IS_SOFT_ASSERTION" value="true" />
+	<parameter name="browser" value="chrome" />
+
+    <listeners>
+  		<listener class-name="com.reporting.extent.TestExtentResultListener"/>
+  		<listener class-name="com.reporting.console.TestConsoleResultListener"/>
+	</listeners>
+
+	<test name="tests">  
+		<classes>
+			<class name="com.test.sample.TestCreatePlayList" />
+		</classes>
+	</test>
+
+</suite>
