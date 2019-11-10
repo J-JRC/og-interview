@@ -38,4 +38,9 @@ Import the project as Gradle. It should download all the jar for you.
 
 # How to run
 Depends on the type/version of your Java IDE. you might need to install TestNG first before you can run it on your IDE.
-If you have the IDE setup, simple right click on file run_test.xml and choose Run As > TestNG Suite
+Since I developed in eclipse, I will only give the instruction in eclipse
+1. Install eclipse from https://www.eclipse.org/downloads/
+2. After install, import the project as Gradle Project
+3. In Help -> Install New Software. Add a work with site from http://beust.com/eclipse (Follow this site https://www.360logica.com/blog/how-to-install-testng-in-eclipse)
+4. Restart your eclipse after install. Please refer to section Before run at this point.
+5. When you are ready, simply right click on file run_test.xml and choose Run As > TestNG Suite

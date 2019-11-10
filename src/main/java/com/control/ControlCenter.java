@@ -193,7 +193,7 @@ public class ControlCenter {
 	    String osArch = System.getProperty("os.arch");
 
 	    if (os.indexOf("win") >= 0 && (osArch.indexOf("amd64")>=0 || osArch.indexOf("x86")>=0)) {
-			directories.put(CHRONE_DRIVER,  directories.get(RESOURCES) + "/drivers/chromedriver_win.exe");
+			directories.put(CHRONE_DRIVER,  directories.get(RESOURCES) + "/drivers/chromedriver.exe");
 			directories.put(IE_DRIVER,   directories.get(RESOURCES) + "/drivers/IEDriverServer_32.exe");
 			directories.put(GECKO_DRIVER,   directories.get(RESOURCES) + "/drivers/geckodriver.exe");
 	    }else {
